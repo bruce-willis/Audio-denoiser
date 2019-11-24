@@ -1,3 +1,21 @@
+# Audio denoiser
+> Задача
+>
+> Научиться улучшать качество аудиозаписи. От простого – удаления белого шума до классификации сторонних шумов и их удаления.
+Необходимо написать скрипт (желательно на Python), который принимает на вход аудиодорожку в формате .wav и возвращает улучшенную запись в том же формате.
+>
+> &mdash; <cite>Надежда Зуева, ВКонтакте</cite>
+
+За основу был взят проект [spleeter](https://github.com/deezer/spleeter) от Deezer, это текущий state-of-the-art в немного похожей области &mdash; отделение вокала в музыке (реализация вышла в начале ноября).
+
+Но, всё же, удаление шума немного другая задача, и даже авторы spleeter не уверены, что [это наилучший подход](https://github.com/deezer/spleeter/issues/31#issuecomment-551024605). Но определенно стоит попробовать! Если что, посмотрю на другие инструменты.
+
+
+Так как исходный проект активно развивается, то он добавлен в `remote`, периодически буду брать актуальную версию оттуда.
+
+За прогрессом над задачей смотреть в [`src/README.md`](src/README.md).
+
+
 <img src="https://github.com/deezer/spleeter/raw/master/images/spleeter_logo.png" height="80" />
 
 [![CircleCI](https://circleci.com/gh/deezer/spleeter/tree/master.svg?style=shield)](https://circleci.com/gh/deezer/spleeter/tree/master) ![PyPI - Python Version](https://img.shields.io/pypi/pyversions/spleeter) [![PyPI version](https://badge.fury.io/py/spleeter.svg)](https://badge.fury.io/py/spleeter) [![Conda](https://img.shields.io/conda/vn/conda-forge/spleeter)](https://anaconda.org/conda-forge/spleeter) [![Docker Pulls](https://img.shields.io/docker/pulls/researchdeezer/spleeter)](https://hub.docker.com/r/researchdeezer/spleeter) [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/deezer/spleeter/blob/master/spleeter.ipynb) [![Gitter chat](https://badges.gitter.im/gitterHQ/gitter.png)](https://gitter.im/spleeter/community)
