@@ -111,3 +111,4 @@ pretrained_models
 docs/build
 .vscode
 spleeter-feedstock/
+data/nr/
