@@ -24,8 +24,8 @@
     "train_max_steps": 100000,
     "throttle_secs": 600,
     "random_seed": 3,
-    "save_checkpoints_steps": 30,
-    "save_summary_steps": 5,
+    "save_checkpoints_steps": 300,
+    "save_summary_steps": 50,
     "model": {
         "type": "unet.unet",
         "params": {
