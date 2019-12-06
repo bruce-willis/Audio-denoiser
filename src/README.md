@@ -18,8 +18,8 @@
 * исходный spleeter был написан на tensorflow версии 1, но код неплохой, используется `tf.estimator`
 * [инструкция](https://github.com/deezer/spleeter/wiki/2.-Getting-started#train-model) только для cli обучения, но когда отсутствие инструкции останавливало?)
 * Подготовка:
-    * нужно подготовить `csv` с путями до аудио для `train` и `test`: [`training/1_csv_generation.ipynb`](training/1_csv_generation.ipynb)
-    * подредактировать `config` со всеми параметрами модели и путями до `csv`: [`training/config/voice_test.csv`](training/config/voice_test.csv)
+    * нужно подготовить `csv` с путями до аудио для `train` и `test`: [`training/1_dataset_preparation.ipynb`](training/1_dataset_preparation.ipynb). Также, из-за непонятной мне причины, нужно **обязательно** конвертировать в 44.1к sample_rate и стерео. ¯\\_(ツ)_/¯
+    * подредактировать `config` со всеми параметрами модели и путями до `csv`: [`training/config/voice_config.json`](training/config/voice_config.json)
 * Поставить дообучаться на этом датасете: [`training/2_model_training.ipynb`](`training/2_model_training.ipynb`)
 * ???
 * **PROFIT!**
