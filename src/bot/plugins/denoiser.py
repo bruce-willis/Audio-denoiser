@@ -41,9 +41,9 @@ def process_audio(filename):
         'waveform': waveform,
         'audio_id': ''})
     _ = prediction.pop('audio_id')
-    predicted_voice_path = str(filename.parent / "voice.ogg")
+    predicted_voice_path = str(filename.parent / "voice.mp3")
     plugin.adapter.save(predicted_voice_path, prediction['voice'], sample_rate)
-    predicted_noise_path = str(filename.parent / "noise.ogg")
+    predicted_noise_path = str(filename.parent / "noise.mp3")
     plugin.adapter.save(predicted_noise_path, prediction['noise'], sample_rate)
     return predicted_voice_path, predicted_noise_path
 
