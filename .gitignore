@@ -115,3 +115,7 @@ spleeter-feedstock/
 # data
 data/nr/
 data/transformed/
+
+# bot
+src/bot/tmp/
+src/bot/configuration.json
